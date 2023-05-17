@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Run Tracking App</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Run Tracking App</h1>
+  
+  <div id="login-screen">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+  </div>
+  
+  <div id="home-screen">
+    <h2>Welcome, <span id="username-display"></span>!</h2>
+    <button onclick="startRun()">Start Run</button>
+  </div>
+  
+  <div id="run-screen" style="display: none;">
+    <h2>Running</h2>
+    <button onclick="stopRun()">Stop Run</button>
+  </div>
+  
+  <div id="history-screen" style="display: none;">
+    <h2>Run History</h2>
+    <ul id="history-list"></ul>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
